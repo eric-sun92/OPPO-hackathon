@@ -1,0 +1,61 @@
+{
+    "devices": [
+        {
+            "name": "Malcolm's TV",
+            "id": "000",
+            "type": "tv",
+            "data": {
+                "on": true,
+                "controlled": false
+            }
+        },
+        {
+            "name": "Living Room TV",
+            "id": "001",
+            "type": "tv",
+            "data": {
+                "on": false,
+                "controlled": false
+            }
+        },
+        {
+            "name": "Bedroom Light",
+            "id": "002",
+            "type": "light",
+            "data": {
+                "on": true,
+                "controlled": false
+            }
+        },
+        {
+            "name": "Kitchen Light",
+            "id": "003",
+            "type": "light",
+            "data": {
+                "on": false,
+                "controlled": false
+            }
+        },
+        {
+            "name": "Main Thermostat",
+            "id": "004",
+            "type": "thermostat",
+            "data": {
+                "on": true,
+                "temperature": 72,
+                "units": "F",
+                "controlled": false
+            }
+        },
+        {
+            "name": "Front Door Lock",
+            "id": "005",
+            "type": "lock",
+            "data": {
+                "on": true,
+                "controlled": true,
+                "locked": true
+            }
+        }
+    ]
+}
