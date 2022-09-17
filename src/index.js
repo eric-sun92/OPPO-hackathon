@@ -6,13 +6,14 @@ const SERVER = "http://localhost:3000/devices";
 
 // Display all devices
 const displayDevices = () => {
-    devicelist.innerHTML = "";
+  devicelist.innerHTML = "";
 
-    devices.forEach(device => {
-        let deviceDiv = document.createElement("div");
-        deviceDiv.classList = "device level is-mobile box mb-2 has-background-grey-light";
-        deviceDiv.dataset.id = device.id;
-        deviceDiv.innerHTML = `
+  devices.forEach((device) => {
+    let deviceDiv = document.createElement("div");
+    deviceDiv.classList = "device box mb-2 has-background-grey-light";
+    deviceDiv.dataset.id = device.id;
+    deviceDiv.innerHTML = `
+    <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">    
                     <div class="content">
@@ -28,23 +29,39 @@ const displayDevices = () => {
                     </label>
                 </div>
             </div>
+        </div>
+        <div>
+            <p> What would you like ${device.name} to do when you fall asleep?
+            </p>
+        </div>
+            
+            
+ 
+        
         `;
-        deviceDiv.querySelector("input").checked = device.data.controlled;
-        devicelist.appendChild(deviceDiv);
+    deviceDiv.querySelector("input").checked = device.data.controlled;
+    devicelist.appendChild(deviceDiv);
+
+    deviceDiv.addEventListener("click", () => {
+      console.log("test");
+      subsections.classList.toggle("hidden");
     });
+  });
 };
+
+const createSubSections = () => {};
 
 // Toggle display of main section with toggle switch
 toggleswitch.addEventListener("click", () => {
-    mainsection.classList.toggle("hidden");
+  mainsection.classList.toggle("hidden");
 });
 
 // Get all devices
 let devices = [];
 fetch(SERVER)
-    .then(response => response.json())
-    .then(data => {
-        devices = data;
-        console.log(devices);
-        displayDevices();
-    });
+  .then((response) => response.json())
+  .then((data) => {
+    devices = data;
+    console.log(devices);
+    displayDevices();
+  });
