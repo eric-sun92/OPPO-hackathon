@@ -96,7 +96,21 @@ body {
     background-color: #ffffff;
 }
 
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
     text-decoration: none;
     color: inherit;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.round {
+    border-radius: 50%;
+    padding: 6px 16px;
+    display: inline-block;
 }
