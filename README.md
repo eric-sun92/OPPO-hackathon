@@ -14,9 +14,10 @@ Using the OPPO Watch Live's sleep-tracking capabilities, combined with an OPPO W
 
 ## Prototype Instructions
 1. Clone this repository
-2. Install json-server: `npm install -g json-server`
-3. Run the json-server: `json-server --watch db.json`
-4. Open the `index.html` file in your browser
+2. Open the `index.html` file in your browser
+
+## Prototype Demo
+Deployment available at https://rest-easy.surge.sh/
 
 ## Team Members
 Eric Sun, Jack Moffatt, Malcolm Keyes, Jem Burch, Luke Baltay

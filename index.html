@@ -1,65 +1,204 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sleep Easy</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
+    <title>Rest Easy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <link rel="stylesheet" href="style.css" />
     <script defer type="text/javascript" src="src/index.js"></script>
-  </head>
+</head>
 
-  <body>
-    <section class="section">
-      <!-- put everything in here -->
-      <div class="container">
-        <!-- Main Toggle Switch -->
+<body>
+    <!-- Header -->
+    <div class="header is-size-5">
         <div class="level is-mobile">
-          <div class="level-left">
-            <div class="level-item">
-              <p class="is-size-3">Enable Sleep Easy?</p>
+            <div class="level-left">
+                <div class="level-item">
+                    <a role="button" class="navbar-burger ml-0" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="level-right">
             <div class="level-item">
-              <!-- Copied from https://www.w3schools.com/howto/howto_css_switch.asp -->
-              <label class="switch">
-                <input type="checkbox" id="toggle-switch" />
-                <span class="slider round"></span>
-              </label>
+                <b>Rest Easy</b>
             </div>
-          </div>
+            <div class="level-right">
+                <div class="level-item">
+                    <b class="m-2 is-size-4">○</b>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+
+    <section class="section py-2 px-2 mt-2">
+        <!-- Main Tiles -->
+        <div class="columns is-mobile is-variable is-1">
+            <!-- Left tiles -->
+            <div class="column is-half">
+                <!-- Climate -->
+                <a class="box tiles p-5 my-2" href="climate.html">
+                    <!-- Icon -->
+                    <div class="level is-mobile mb-2">
+                        <div class="level-item">
+                            <div class="category">
+                                <!-- icon here -->
+                                <!-- From: https://commons.wikimedia.org/wiki/File:Thermostat_-_The_Noun_Project.svg -->
+                                <img src="img/thermostat.svg" alt="Thermostat icon" />
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- Label -->
+                    <div class="level is-mobile">
+                        <div class="level-item">
+                            <div>
+                                Climate
+                            </div>
+                        </div> 
+                    </div>
+
+                </a>
+
+                <!-- Lighting -->
+                <a class="box tiles p-5 my-2">
+                    <!-- Icon -->
+                    <div class="level is-mobile mb-2">
+                        <div class="level-item">
+                            <div class="category">
+                                <!-- icon here -->
+                                <!-- From: https://commons.wikimedia.org/wiki/File:Noun_Project_lightbulb_icon_1263005_cc.svg -->
+                                <img src="img/lightbulb.svg" alt="Lightbulb Icon" />
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- Label -->
+                    <div class="level is-mobile">
+                        <div class="level-item">
+                            <div>
+                                Lighting
+                            </div>
+                        </div> 
+                    </div>
+
+                </a>
+
+                <!-- TVs -->
+                <a class="box tiles p-5 my-2">
+                    <!-- Icon -->
+                    <div class="level is-mobile mb-2">
+                        <div class="level-item">
+                            <div class="category">
+                                <!-- icon here -->
+                                <!-- From: https://commons.wikimedia.org/wiki/File:Noun_Television_15555.svg -->
+                                <img src="img/tv.svg" alt="TVs Icon" />
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- Label -->
+                    <div class="level is-mobile">
+                        <div class="level-item">
+                            <div>
+                                TVs
+                            </div>
+                        </div> 
+                    </div>
+
+                </a>
+            </div>
+
+            <!-- right tiles -->
+            <div class="column is-half">
+                <!-- Speakers -->
+                <a class="box tiles p-5 my-2" href="speakers.html">
+                    <!-- Icon -->
+                    <div class="level is-mobile mb-2">
+                        <div class="level-item">
+                            <div class="category">
+                                <!-- icon here -->
+                                <!-- From: https://en.m.wikipedia.org/wiki/File:Speaker_Icon.svg -->
+                                <img src="img/speaker_icon.svg" alt="Speaker icon" />
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- Label -->
+                    <div class="level is-mobile">
+                        <div class="level-item">
+                            <div>
+                                Speakers
+                            </div>
+                        </div> 
+                    </div>
+
+                </a>
+
+                <!-- Security -->
+                <a class="box tiles p-5 my-2">
+                    <!-- Icon -->
+                    <div class="level is-mobile mb-2">
+                        <div class="level-item">
+                            <div class="category">
+                                <!-- icon here -->
+                                <!-- From: https://commons.wikimedia.org/wiki/File:Open_Iconic_lock_locked.svg -->
+                                <img src="img/lock.svg" alt="Security Icon" />
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- Label -->
+                    <div class="level is-mobile">
+                        <div class="level-item">
+                            <div>
+                                Security
+                            </div>
+                        </div> 
+                    </div>
+
+                </a>
+
+                <!-- Others -->
+                <a class="box tiles p-5 my-2">
+                    <!-- Icon -->
+                    <div class="level is-mobile mb-2">
+                        <div class="level-item">
+                            <div class="category">
+                                <!-- icon here -->
+                                <!-- From: https://commons.wikimedia.org/wiki/File:Noun_Project_Technology_icon_2034212.svg -->
+                                <img src="img/technology.svg" alt="Others Icon" />
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- Label -->
+                    <div class="level is-mobile">
+                        <div class="level-item">
+                            <div>
+                                Others
+                            </div>
+                        </div> 
+                    </div>
+
+                </a>
+            </div>
         </div>
 
-        <!-- Main Options -->
-        <div
-          class="hidden box mb-4 has-background-grey-lighter"
-          id="main-section"
-        >
-          <p class="subtitle">Available devices:</p>
+        <p class="is-size-6 has-text-centered my-3 has-text-white is-italic">
+            Rest Easy helps you sleep better by taking control
+            of your home's smart devices when your OPPO
+            Watch detects you have fallen asleep.
+        </p>
 
-          <div id="device-list"></div>
-        </div>
-
-        <!-- What is Sleep Easy -->
-        <div class="content box has-background-white-ter">
-          <p>
-            Sleep Easy takes advantage of your OPPO Watch Free's OSleep
-            functionality to take control of your smart home's IoT devices when
-            you fall asleep.
-          </p>
-          <p>Some useful examples might be...</p>
-          <ul class="pt-0">
-            <li>Turning off your lights</li>
-            <li>Turning off your TV, or putting on soothing sleep music</li>
-            <li>Changing the thermostat</li>
-            <li>etc...</li>
-          </ul>
-        </div>
-      </div>
     </section>
-  </body>
+
+</body>
+
 </html>
