@@ -65,6 +65,7 @@ input:checked+.slider:before {
 
 html {
     height: 100%;
+    background-color: #669E86;
 }
 
 body {
@@ -129,4 +130,5 @@ a:active {
     background-color: #148066;
     z-index: 5;
     border-radius: 0 0 20px 0;
+    box-shadow: black 0px 0px 10px;
 }
