@@ -6,14 +6,14 @@ const SERVER = "http://localhost:3000/devices";
 
 // Display all devices
 const displayDevices = () => {
-  devicelist.innerHTML = "";
+    devicelist.innerHTML = "";
 
-  devices.forEach((device) => {
-    let deviceDiv = document.createElement("div");
-    deviceDiv.classList = "device box mb-2 has-background-grey-light";
-    deviceDiv.dataset.id = device.id;
-    deviceDiv.innerHTML = `
-    <div class="level is-mobile">
+    devices.forEach((device) => {
+        let deviceDiv = document.createElement("div");
+        deviceDiv.classList = "device box mb-2 has-background-grey-light";
+        deviceDiv.dataset.id = device.id;
+        deviceDiv.innerHTML = `
+        <div class="level is-mobile">
             <div class="level-left">
                 <div class="level-item">    
                     <div class="content">
@@ -34,92 +34,89 @@ const displayDevices = () => {
             <p> 
                 What would you like ${device.name} to do when you fall asleep?
             </p>
-            </br>
-            <div class="subsection">
-            </div>
-        <div>
-    </div>`;
+            <br>
+            <div class="subsection"></div>
+        </div>`;
 
-    let subsection = deviceDiv.querySelector(".subsection");
-    console.log(subsection);
-    if (device.controls.type === "Select") {
-      device.controls.options.forEach((option) => {
-        let subsectionOptionMain = document.createElement("div");
-        subsectionOptionMain.classList.add("level");
-        subsectionOptionMain.classList.add("is-mobile");
+        let subsection = deviceDiv.querySelector(".subsection");
+        
+        if (device.controls.type === "Select") {
+            device.controls.options.forEach((option) => {
+                let subsectionOptionMain = document.createElement("div");
+                subsectionOptionMain.classList.add("level");
+                subsectionOptionMain.classList.add("is-mobile");
 
-        let subsectionOptionMainLeft = document.createElement("div");
-        subsectionOptionMainLeft.classList.add("level-left");
-        subsectionOptionMain.append(subsectionOptionMainLeft);
+                let subsectionOptionMainLeft = document.createElement("div");
+                subsectionOptionMainLeft.classList.add("level-left");
+                subsectionOptionMain.append(subsectionOptionMainLeft);
 
-        let subsectionOptionLeftItem = document.createElement("div");
-        subsectionOptionLeftItem.classList.add("level-item");
-        subsectionOptionMainLeft.append(subsectionOptionLeftItem);
+                let subsectionOptionLeftItem = document.createElement("div");
+                subsectionOptionLeftItem.classList.add("level-item");
+                subsectionOptionMainLeft.append(subsectionOptionLeftItem);
 
-        let toggle = document.createElement("label");
-        toggle.classList.add("switch");
-        subsectionOptionLeftItem.append(toggle);
+                let toggle = document.createElement("label");
+                toggle.classList.add("switch");
+                subsectionOptionLeftItem.append(toggle);
 
-        //   <span class="slider round"></span>
+                //   <span class="slider round"></span>
 
-        let checkbox = document.createElement("input");
-        checkbox.setAttribute("type", "checkbox");
-        toggle.append(checkbox);
+                let checkbox = document.createElement("input");
+                checkbox.setAttribute("type", "checkbox");
+                toggle.append(checkbox);
 
-        let span = document.createElement("span");
-        span.classList = "slider round";
-        checkbox.append(span);
-        // <div class="level-left">
-        //     <div class="level-item">
-        //         <div class="content">
-        //             <p><b>${device.name}</b></p>
-        //         </div>
-        //     </div>
-        // </div>
-        let subsectionOptionMainRight = document.createElement("div");
-        subsectionOptionMainRight.classList.add("level-right");
-        subsectionOptionMain.append(subsectionOptionMainRight);
+                let span = document.createElement("span");
+                span.classList = "slider round";
+                checkbox.append(span);
+                // <div class="level-left">
+                //     <div class="level-item">
+                //         <div class="content">
+                //             <p><b>${device.name}</b></p>
+                //         </div>
+                //     </div>
+                // </div>
+                let subsectionOptionMainRight = document.createElement("div");
+                subsectionOptionMainRight.classList.add("level-right");
+                subsectionOptionMain.append(subsectionOptionMainRight);
 
-        let subsectionOptionRightItem = document.createElement("div");
-        subsectionOptionRightItem.classList.add("level-item");
-        subsectionOptionMainRight.append(subsectionOptionRightItem);
+                let subsectionOptionRightItem = document.createElement("div");
+                subsectionOptionRightItem.classList.add("level-item");
+                subsectionOptionMainRight.append(subsectionOptionRightItem);
 
-        let subsectionOptionContent = document.createElement("div");
-        subsectionOptionContent.classList.add("content");
-        subsectionOptionMainRight.append(subsectionOptionContent);
+                let subsectionOptionContent = document.createElement("div");
+                subsectionOptionContent.classList.add("content");
+                subsectionOptionMainRight.append(subsectionOptionContent);
 
-        let subsectionOptionContentName = document.createElement("p");
-        subsectionOptionContentName.innerHTML = option;
-        //make div into form
+                let subsectionOptionContentName = document.createElement("p");
+                subsectionOptionContentName.innerHTML = option;
+                //make div into form
 
-        subsection.append(subsectionOptionMain);
-        console.log(subsectionOptionMain);
-      });
-    }
+                subsection.append(subsectionOptionMain);
+                console.log(subsectionOptionMain);
+            });
+        }
 
-    deviceDiv.querySelector("input").checked = device.data.controlled;
-    devicelist.appendChild(deviceDiv);
+        deviceDiv.querySelector("input").checked = device.data.controlled;
+        devicelist.appendChild(deviceDiv);
 
-    // deviceDiv.addEventListener("click", () => {
-    //   console.log("test");
-    //   subsections.classList.toggle("hidden");
-    // });
-  });
+        // deviceDiv.addEventListener("click", () => {
+        //   console.log("test");
+        //   subsections.classList.toggle("hidden");
+        // });
+    });
 };
 
-const createSubSections = () => {};
+const createSubSections = () => { };
 
 // Toggle display of main section with toggle switch
 toggleswitch.addEventListener("click", () => {
-  mainsection.classList.toggle("hidden");
+    mainsection.classList.toggle("hidden");
 });
 
-// Get all devices
+// Fetch all devices
 let devices = [];
 fetch(SERVER)
-  .then((response) => response.json())
-  .then((data) => {
-    devices = data;
-    console.log(devices);
-    displayDevices();
-  });
+    .then((response) => response.json())
+    .then((data) => {
+        devices = data;
+        displayDevices();
+    });
