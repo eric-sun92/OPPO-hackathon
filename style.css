@@ -21,7 +21,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #50786D;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -39,12 +39,9 @@
 }
 
 input:checked+.slider {
-    background-color: #7cffc4ff;
+    background-color: #CCC;
 }
 
-input:focus+.slider {
-    box-shadow: 0 0 1px #7cffc4ff;
-}
 
 input:checked+.slider:before {
     -webkit-transform: translateX(26px);
@@ -64,4 +61,32 @@ input:checked+.slider:before {
 /* Hidden class */
 .hidden {
     display: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #50786D;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 0 0 20px 0;
+}
+
+.tiles {
+    background-color: #CDF5E2;
+}
+
+.category {
+    height: 75px;
+    width: 75px;
+    background-color: #ffffff;
 }

@@ -1,65 +1,71 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sleep Easy</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
+    <title>Rest Easy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <link rel="stylesheet" href="style.css" />
     <script defer type="text/javascript" src="src/index.js"></script>
-  </head>
+</head>
 
-  <body>
-    <section class="section">
-      <!-- put everything in here -->
-      <div class="container">
-        <!-- Main Toggle Switch -->
-        <div class="level is-mobile">
-          <div class="level-left">
-            <div class="level-item">
-              <p class="is-size-3">Enable Sleep Easy?</p>
+<body>
+    <!-- Header -->
+    <div class="header is-flex is-justify-content-center is-align-items-center is-size-5-mobile">
+        <b>Rest Easy</b>
+    </div>
+
+    <section class="section py-2 mt-2">
+        <!-- Main Tiles -->
+        <div class="columns is-mobile is-variable is-1">
+            <!-- Left tiles -->
+            <div class="column is-half">
+                <!-- individual tile -->
+                <div class="box tiles p-2">
+                    <!-- Switch -->
+                    <div class="level is-mobile mb-2">
+                        <div class="level-left"></div>
+                        <div class="level-right">
+                            <div class="level-item">
+                                <label class="switch">
+                                    <input type="checkbox" id="toggle-switch" />
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Icon -->
+                    <div class="level is-mobile mb-2">
+                        <div class="level-item">
+                            <div class="category">
+                                <!-- icon here -->
+                            </div>
+                        </div> 
+                    </div>
+
+                    <!-- Label -->
+                    <div class="level is-mobile">
+                        <div class="level-item">
+                            <div>
+                                Thermostats
+                            </div>
+                        </div> 
+                    </div>
+
+                </div>
             </div>
-          </div>
-          <div class="level-right">
-            <div class="level-item">
-              <!-- Copied from https://www.w3schools.com/howto/howto_css_switch.asp -->
-              <label class="switch">
-                <input type="checkbox" id="toggle-switch" />
-                <span class="slider round"></span>
-              </label>
+
+            <!-- right tiles -->
+            <div class="column is-half">
+                <div class="box tiles">
+
+                </div>
             </div>
-          </div>
         </div>
-
-        <!-- Main Options -->
-        <div
-          class="hidden box mb-4 has-background-grey-lighter"
-          id="main-section"
-        >
-          <p class="subtitle">Available devices:</p>
-
-          <div id="device-list"></div>
-        </div>
-
-        <!-- What is Sleep Easy -->
-        <div class="content box has-background-white-ter">
-          <p>
-            Sleep Easy takes advantage of your OPPO Watch Free's OSleep
-            functionality to take control of your smart home's IoT devices when
-            you fall asleep.
-          </p>
-          <p>Some useful examples might be...</p>
-          <ul class="pt-0">
-            <li>Turning off your lights</li>
-            <li>Turning off your TV, or putting on soothing sleep music</li>
-            <li>Changing the thermostat</li>
-            <li>etc...</li>
-          </ul>
-        </div>
-      </div>
     </section>
-  </body>
+
+</body>
+
 </html>

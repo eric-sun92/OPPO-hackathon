@@ -1,8 +1,8 @@
-let toggleswitch = document.querySelector("#toggle-switch");
-let mainsection = document.querySelector("#main-section");
-let devicelist = document.querySelector("#device-list");
+// let toggleswitch = document.querySelector("#toggle-switch");
+// let mainsection = document.querySelector("#main-section");
+// let devicelist = document.querySelector("#device-list");
 
-const SERVER = "http://localhost:3000/devices";
+// const SERVER = "http://localhost:3000/devices";
 
 // Display all devices
 const displayDevices = () => {
@@ -108,15 +108,15 @@ const displayDevices = () => {
 const createSubSections = () => { };
 
 // Toggle display of main section with toggle switch
-toggleswitch.addEventListener("click", () => {
-    mainsection.classList.toggle("hidden");
-});
+// toggleswitch.addEventListener("click", () => {
+//     mainsection.classList.toggle("hidden");
+// });
 
 // Fetch all devices
-let devices = [];
-fetch(SERVER)
-    .then((response) => response.json())
-    .then((data) => {
-        devices = data;
-        displayDevices();
-    });
+// let devices = [];
+// fetch(SERVER)
+//     .then((response) => response.json())
+//     .then((data) => {
+//         devices = data;
+//         // displayDevices();
+//     });
