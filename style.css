@@ -21,7 +21,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #50786D;
+    background-color: #CCC;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -39,7 +39,7 @@
 }
 
 input:checked+.slider {
-    background-color: #CCC;
+    background-color: #50786D;
 }
 
 
@@ -69,7 +69,8 @@ html {
 
 body {
     min-height: 100%;
-    background-color: #50786D;
+    background-color: #669E86;
+    color: #50786D;
 }
 
 .header {
@@ -85,8 +86,17 @@ body {
     background-color: #CDF5E2;
 }
 
+.forest {
+    background-color: #739c88;
+}
+
 .category {
     height: 75px;
     width: 75px;
     background-color: #ffffff;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
 }
