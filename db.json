@@ -9,8 +9,8 @@
                 "controlled": false
             },
             "controls": {
-                "multiple-select": false,
-                "options": ["Smart pause & Power down"]
+                "type": "Select",
+                "options": ["Smart pause & Power down", "Play soothing music", "Display night light"]
             }
         },
         {
@@ -20,6 +20,10 @@
             "data": {
                 "on": false,
                 "controlled": false
+            },
+            "controls": {
+                "type": "Select",
+                "options": ["Smart pause & Power down", "Play soothing music", "Display night light"]
             }
         },
         {
@@ -29,6 +33,10 @@
             "data": {
                 "on": true,
                 "controlled": false
+            },
+            "controls": {
+                "type": "Select",
+                "options": ["Turn off when I fall asleep"]
             }
         },
         {
@@ -38,6 +46,10 @@
             "data": {
                 "on": false,
                 "controlled": false
+            }, 
+            "controls": {
+                "type": "Select",
+                "options": ["Turn off when I fall asleep"]
             }
         },
         {
@@ -49,6 +61,10 @@
                 "temperature": 72,
                 "units": "F",
                 "controlled": false
+            },
+            "controls": {
+                "type": "Submit",
+                "options": ["Set sleeping temperature: ", "Set wakeup temperature: "]
             }
         },
         {
@@ -59,6 +75,10 @@
                 "on": true,
                 "controlled": true,
                 "locked": true
+            },
+            "controls": {
+                "type": "Select",
+                "options": ["Lock door"]
             }
         }
     ]
