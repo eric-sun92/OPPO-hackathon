@@ -42,7 +42,6 @@ input:checked+.slider {
     background-color: #50786D;
 }
 
-
 input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
@@ -112,4 +111,15 @@ a:active {
     border-radius: 50%;
     padding: 6px 16px;
     display: inline-block;
+}
+
+/* luke's stuff */
+
+div{
+    position: relative;
+}
+img {
+    opacity: 0.5;
+    position: absolute;
+    left: -5%;
 }
