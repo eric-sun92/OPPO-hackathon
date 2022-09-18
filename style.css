@@ -78,7 +78,7 @@ body {
     left: 0;
     width: 90%;
     height: 50px;
-    background-color: #ffffff;
+    background-color: #CDF5E2;
     border-radius: 0 0 20px 0;
 }
 
@@ -112,4 +112,8 @@ a:active {
     border-radius: 50%;
     padding: 6px 16px;
     display: inline-block;
+}
+
+.lower-opacity {
+    opacity: 0.35;
 }
