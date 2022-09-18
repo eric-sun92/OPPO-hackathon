@@ -74,12 +74,14 @@ body {
 }
 
 .header {
+    position:absolute;
     top: 0;
     left: 0;
     width: 90%;
     height: 50px;
     background-color: #CDF5E2;
     border-radius: 0 0 20px 0;
+    z-index: 100;
 }
 
 .tiles {
@@ -116,4 +118,15 @@ a:active {
 
 .lower-opacity {
     opacity: 0.35;
+}
+
+.main-menu {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    min-height: 50%;
+    background-color: #148066;
+    z-index: 5;
+    border-radius: 0 0 20px 0;
 }
