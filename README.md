@@ -1,6 +1,10 @@
 # OPPO-hackathon
 
-Brainstorming: https://docs.google.com/presentation/d/1UQ54qj7YiUUd6jlZa81AOSKcVg2hRyhCa6rYT8OI1v0/edit?usp=sharing
+Website Presentation: https://rest-easy-eric.surge.sh/
+
+Protoype Deployment: https://rest-easy.surge.sh/
+
+Hackathon Presentation: https://docs.google.com/presentation/d/1xwwKq_-rKpZU1V-cX07mdi-Wk3HeaxZ2lEMRPY_F3vc/edit?usp=sharing
 
 ## Problem Statement
 Sometimes we fall asleep at odd times, without finishing a nightly routine, or otherwise not being in the ideal environment for a good night's sleep. We want to create a better sleeping environment for users that is easy to use and can be customized to their needs.
@@ -16,8 +20,18 @@ Using the OPPO Watch Live's sleep-tracking capabilities, combined with an OPPO W
 1. Clone this repository
 2. Open the `index.html` file in your browser
 
-## Prototype Demo
-Deployment available at https://rest-easy.surge.sh/
+## Screenshots of Mobile Prototype
+### Main Menu
+<img src="https://user-images.githubusercontent.com/78397791/190923310-f968a495-f78a-40a0-8bea-965a0432e07e.png" alt="Main Menu" width="500px" />
+
+### Speakers Page
+<img src="https://user-images.githubusercontent.com/78397791/190923324-acfddb80-4aac-418e-a28f-e076361b6b2a.png" alt="Speakers Page" width="500px" />
+
+### Other Devices Page
+<img src="https://user-images.githubusercontent.com/78397791/190923328-ac1e11be-6ae2-4426-9652-250fbb67aa1a.png" alt="Other Devices Page" width="500px" />
+
+### Preferences Dropdown
+<img src="https://user-images.githubusercontent.com/78397791/190923338-e6573428-4372-4273-b7f8-903ff0b7abab.png" alt="Preferences Dropdown" width="500px" />
 
 ## Team Members
-Eric Sun, Jack Moffatt, Malcolm Keyes, Jem Burch, Luke Baltay
+[Eric Sun](https://github.com/eric-sun92), Jack Moffatt, [Malcolm Keyes](https://github.com/malcolmk181), Jem Burch, [Luke Baltay](https://github.com/lukebaltaycs)
